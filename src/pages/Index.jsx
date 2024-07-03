@@ -9,22 +9,22 @@ import { TooltipProvider, Tooltip, TooltipTrigger, TooltipContent } from "@/comp
 import { Circle, ArrowRight } from "lucide-react";
 
 const tabData = [
-  { value: "projetos", label: "Projetos", content: "Implementação de Tecnologia de Gestão de Projetos: Desenvolver e utilizar softwares avançados de gestão de projetos que permitam uma programação detalhada e monitoramento em tempo real, reduzindo assim erros e atrasos." },
-  { value: "custos", label: "Composições de custos materiais e mão de obra", content: "Utilização de Realidade Virtual e Modelagem 3D: Incorporar tecnologias como realidade virtual e modelagem 3D para visualização antecipada de projetos, identificando potenciais problemas no cronograma antes de começarem." },
-  { value: "orcamento", label: "Orçamento", content: "Treinamento Avançado em Gestão de Projetos: Investir em programas de treinamento contínuo para gerentes de projeto e equipes de campo, focados em técnicas avançadas de planejamento e execução de projetos." },
-  { value: "cronograma", label: "Cronograma", content: "Análise de Dados Históricos e Machine Learning: Utilizar análise de dados históricos de projetos passados e algoritmos de machine learning para prever e mitigar possíveis desvios no cronograma." },
-  { value: "medicoes", label: "Medições", content: "Parcerias Estratégicas com Fornecedores e Subempreiteiros: Estabelecer parcerias sólidas e de longo prazo com fornecedores e subempreiteiros confiáveis, garantindo a disponibilidade oportuna de materiais e mão de obra qualificada." },
-  { value: "diario-obras", label: "Diário de obras", content: "Implementação de Tecnologia de Gestão de Projetos: Desenvolver e utilizar softwares avançados de gestão de projetos que permitam uma programação detalhada e monitoramento em tempo real, reduzindo assim erros e atrasos." },
-  { value: "requisicoes-compras", label: "Requisições de compras", content: "Utilização de Realidade Virtual e Modelagem 3D: Incorporar tecnologias como realidade virtual e modelagem 3D para visualização antecipada de projetos, identificando potenciais problemas no cronograma antes de começarem." },
-  { value: "ordem-compras", label: "Ordem de compras", content: "Treinamento Avançado em Gestão de Projetos: Investir em programas de treinamento contínuo para gerentes de projeto e equipes de campo, focados em técnicas avançadas de planejamento e execução de projetos." },
-  { value: "estoque-epis", label: "Estoque de EPI’s", content: "Análise de Dados Históricos e Machine Learning: Utilizar análise de dados históricos de projetos passados e algoritmos de machine learning para prever e mitigar possíveis desvios no cronograma." },
-  { value: "gerenciamento-ferramentas", label: "Gerenciamento de Ferramentas", content: "Parcerias Estratégicas com Fornecedores e Subempreiteiros: Estabelecer parcerias sólidas e de longo prazo com fornecedores e subempreiteiros confiáveis, garantindo a disponibilidade oportuna de materiais e mão de obra qualificada." },
-  { value: "financeiro", label: "Financeiro", content: "Implementação de Tecnologia de Gestão de Projetos: Desenvolver e utilizar softwares avançados de gestão de projetos que permitam uma programação detalhada e monitoramento em tempo real, reduzindo assim erros e atrasos." },
-  { value: "faturas-locacao", label: "Faturas de locação", content: "Utilização de Realidade Virtual e Modelagem 3D: Incorporar tecnologias como realidade virtual e modelagem 3D para visualização antecipada de projetos, identificando potenciais problemas no cronograma antes de começarem." },
-  { value: "gerenciamento-funcionarios", label: "Gerenciamento de funcionários", content: "Treinamento Avançado em Gestão de Projetos: Investir em programas de treinamento contínuo para gerentes de projeto e equipes de campo, focados em técnicas avançadas de planejamento e execução de projetos." },
-  { value: "gerenciamento-empreiteiros", label: "Gerenciamento de empreiteiros", content: "Análise de Dados Históricos e Machine Learning: Utilizar análise de dados históricos de projetos passados e algoritmos de machine learning para prever e mitigar possíveis desvios no cronograma." },
-  { value: "relatorio-ponto", label: "Relatório ponto", content: "Parcerias Estratégicas com Fornecedores e Subempreiteiros: Estabelecer parcerias sólidas e de longo prazo com fornecedores e subempreiteiros confiáveis, garantindo a disponibilidade oportuna de materiais e mão de obra qualificada." },
-  { value: "relatorio-obras", label: "Relatório de obras", content: "Implementação de Tecnologia de Gestão de Projetos: Desenvolver e utilizar softwares avançados de gestão de projetos que permitam uma programação detalhada e monitoramento em tempo real, reduzindo assim erros e atrasos." },
+  { value: "projetos", label: "Projetos", content: "Gerencie seus projetos de forma eficiente com ferramentas avançadas de planejamento e execução." },
+  { value: "custos", label: "Composições de custos materiais e mão de obra", content: "Controle os custos de materiais e mão de obra com precisão e transparência." },
+  { value: "orcamento", label: "Orçamento", content: "Elabore orçamentos detalhados e acompanhe as variações financeiras ao longo do projeto." },
+  { value: "cronograma", label: "Cronograma", content: "Planeje e monitore o cronograma do projeto para garantir a entrega no prazo." },
+  { value: "medicoes", label: "Medições", content: "Realize medições precisas e acompanhe o progresso físico da obra." },
+  { value: "diario-obras", label: "Diário de obras", content: "Mantenha um registro diário das atividades e ocorrências no canteiro de obras." },
+  { value: "requisicoes-compras", label: "Requisições de compras", content: "Gerencie as requisições de compras de materiais e serviços de forma integrada." },
+  { value: "ordem-compras", label: "Ordem de compras", content: "Emita ordens de compra e acompanhe o recebimento de materiais." },
+  { value: "estoque-epis", label: "Estoque de EPI’s", content: "Controle o estoque de Equipamentos de Proteção Individual (EPI’s) para garantir a segurança dos trabalhadores." },
+  { value: "gerenciamento-ferramentas", label: "Gerenciamento de Ferramentas", content: "Gerencie o uso e a manutenção das ferramentas utilizadas na obra." },
+  { value: "financeiro", label: "Financeiro", content: "Acompanhe as finanças do projeto, incluindo despesas, receitas e fluxo de caixa." },
+  { value: "faturas-locacao", label: "Faturas de locação", content: "Gerencie as faturas de locação de equipamentos e serviços." },
+  { value: "gerenciamento-funcionarios", label: "Gerenciamento de funcionários", content: "Gerencie a equipe de funcionários, incluindo alocação e desempenho." },
+  { value: "gerenciamento-empreiteiros", label: "Gerenciamento de empreiteiros", content: "Gerencie os empreiteiros e subcontratados envolvidos no projeto." },
+  { value: "relatorio-ponto", label: "Relatório ponto", content: "Registre e acompanhe a frequência e o ponto dos trabalhadores." },
+  { value: "relatorio-obras", label: "Relatório de obras", content: "Gere relatórios detalhados sobre o andamento e a performance da obra." },
 ];
 
 const testimonials = [
