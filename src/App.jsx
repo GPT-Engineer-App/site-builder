@@ -22,6 +22,7 @@ import GerenciamentoFuncionarios from "./pages/GerenciamentoFuncionarios.jsx";
 import GerenciamentoEmpreiteiros from "./pages/GerenciamentoEmpreiteiros.jsx";
 import RelatorioPonto from "./pages/RelatorioPonto.jsx";
 import RelatorioObras from "./pages/RelatorioObras.jsx";
+import SecondPage from "./pages/SecondPage.jsx"; // Import SecondPage
 
 const queryClient = new QueryClient();
 
@@ -59,6 +60,7 @@ const App = () => {
               <Route path="gerenciamento-empreiteiros" element={<GerenciamentoEmpreiteiros />} />
               <Route path="relatorio-ponto" element={<RelatorioPonto />} />
               <Route path="relatorio-obras" element={<RelatorioObras />} />
+              <Route path="second-page" element={<SecondPage />} /> {/* Add SecondPage route */}
             </Route>
           </Routes>
         </Router>
