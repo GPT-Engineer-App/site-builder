@@ -90,7 +90,7 @@ const Index = () => {
       <section className="w-full max-w-6xl mb-12">
         <h2 className="text-3xl font-bold mb-6 text-center">Como os Componentes se Conectam</h2>
         <p className="text-center mb-6">O SIGO integra todos os aspectos da gestão de obras, desde o planejamento até a execução, garantindo eficiência e controle total.</p>
-        <div className="flex justify-center">
+        <div className="flex justify-center mb-6">
           <TooltipProvider>
             <div className="flex items-center space-x-4">
               <Tooltip>
@@ -122,6 +122,7 @@ const Index = () => {
             </div>
           </TooltipProvider>
         </div>
+        <p className="text-center">A integração entre os módulos permite uma gestão mais eficiente e precisa.</p>
       </section>
 
       {/* Testimonials Section */}
