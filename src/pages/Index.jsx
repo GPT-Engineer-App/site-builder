@@ -5,6 +5,8 @@ import { useState } from "react";
 import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious } from "@/components/ui/carousel";
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
 import { Separator } from "@/components/ui/separator";
+import { TooltipProvider, Tooltip, TooltipTrigger, TooltipContent } from "@/components/ui/tooltip";
+import { Circle, ArrowRight } from "lucide-react";
 
 const tabData = [
   { value: "projetos", label: "Projetos", content: "Implementação de Tecnologia de Gestão de Projetos: Desenvolver e utilizar softwares avançados de gestão de projetos que permitam uma programação detalhada e monitoramento em tempo real, reduzindo assim erros e atrasos." },
@@ -88,7 +90,38 @@ const Index = () => {
       <section className="w-full max-w-6xl mb-12">
         <h2 className="text-3xl font-bold mb-6 text-center">Como os Componentes se Conectam</h2>
         <p className="text-center mb-6">O SIGO integra todos os aspectos da gestão de obras, desde o planejamento até a execução, garantindo eficiência e controle total.</p>
-        <img src="/images/integration-diagram.jpg" alt="Diagrama de Integração" className="w-full h-auto" />
+        <div className="flex justify-center">
+          <TooltipProvider>
+            <div className="flex items-center space-x-4">
+              <Tooltip>
+                <TooltipTrigger>
+                  <Circle className="h-8 w-8 text-primary" />
+                </TooltipTrigger>
+                <TooltipContent>
+                  <p>Cronograma</p>
+                </TooltipContent>
+              </Tooltip>
+              <ArrowRight className="h-6 w-6 text-muted-foreground" />
+              <Tooltip>
+                <TooltipTrigger>
+                  <Circle className="h-8 w-8 text-primary" />
+                </TooltipTrigger>
+                <TooltipContent>
+                  <p>Orçamento</p>
+                </TooltipContent>
+              </Tooltip>
+              <ArrowRight className="h-6 w-6 text-muted-foreground" />
+              <Tooltip>
+                <TooltipTrigger>
+                  <Circle className="h-8 w-8 text-primary" />
+                </TooltipTrigger>
+                <TooltipContent>
+                  <p>Financeiro</p>
+                </TooltipContent>
+              </Tooltip>
+            </div>
+          </TooltipProvider>
+        </div>
       </section>
 
       {/* Testimonials Section */}
