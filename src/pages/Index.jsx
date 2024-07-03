@@ -5,6 +5,7 @@ import { useState } from "react";
 import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious } from "@/components/ui/carousel";
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
 import { Separator } from "@/components/ui/separator";
+import { TooltipProvider, Tooltip, TooltipTrigger, TooltipContent } from "@/components/ui/tooltip";
 
 const tabData = [
   { value: "projetos", label: "Projetos", content: "Implementação de Tecnologia de Gestão de Projetos: Desenvolver e utilizar softwares avançados de gestão de projetos que permitam uma programação detalhada e monitoramento em tempo real, reduzindo assim erros e atrasos." },
@@ -88,7 +89,18 @@ const Index = () => {
       <section className="w-full max-w-6xl mb-12">
         <h2 className="text-3xl font-bold mb-6 text-center">Como os Componentes se Conectam</h2>
         <p className="text-center mb-6">O SIGO integra todos os aspectos da gestão de obras, desde o planejamento até a execução, garantindo eficiência e controle total.</p>
-        <img src="/images/integration-diagram.jpg" alt="Diagrama de Integração" className="w-full h-auto" />
+        <TooltipProvider>
+          <div className="flex justify-center">
+            <Tooltip>
+              <TooltipTrigger>
+                <img src="/images/neural-network-diagram.jpg" alt="Diagrama de Rede Neural" className="w-full h-auto" />
+              </TooltipTrigger>
+              <TooltipContent>
+                <p>Se o cronograma não for executado corretamente, isso impacta o orçamento, que por sua vez afeta o financeiro.</p>
+              </TooltipContent>
+            </Tooltip>
+          </div>
+        </TooltipProvider>
       </section>
 
       {/* Testimonials Section */}
