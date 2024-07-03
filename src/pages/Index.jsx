@@ -25,7 +25,7 @@ const Index = () => {
       <h1 className="text-4xl font-bold mb-4">Bem vindo ao SIGO</h1>
       <p className="text-xl mb-6">Sistema integrado em gestão de obras</p>
       <Tabs defaultValue="projetos" className="w-full max-w-4xl">
-        <TabsList className="flex flex-wrap">
+        <TabsList className="flex flex-wrap gap-2">
           {tabData.map((tab) => (
             <TabsTrigger key={tab.value} value={tab.value} className="mr-2 mb-2">
               {tab.label}
